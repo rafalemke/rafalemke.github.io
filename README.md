@@ -1,1 +1,1 @@
-https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif
+<img src = "giphy.gif" width = "325px">
