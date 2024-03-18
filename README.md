@@ -1,6 +1,8 @@
-<img src = "giphy.gif" width = "325px">
+<h1 align="center">
+<img src = "giphy.gif" width = "325px"><br>
+   Rafael Lemke
+</h1>
 
-# Rafael Lemke
 
 ## Sobre Mim
 Olá! Sou Rafael Lemke, um entusiasta de **ciência de dados** e **inteligência artificial**. Comecei minha jornada na programação há pouco mais de um ano e estou animado para compartilhar meus projetos e habilidades com você.
