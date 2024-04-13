@@ -5,14 +5,15 @@
 
 
 ## Sobre Mim
-Olá! Sou Rafael Lemke, um entusiasta de **ciência de dados** e **inteligência artificial**. Comecei minha jornada na programação há pouco mais de um ano e estou animado para compartilhar meus projetos e habilidades com você.
+Olá! Sou Rafael Lemke. Comecei minha jornada na programação há pouco mais de um ano e estou animado para compartilhar meus projetos e habilidades.
 
 ## Habilidades e Certificados
 
 1. **Habilidades em Python**:
    - Experiência com APIs, Programação Orientada a Objetos (POO) e criação de interfaces gráficas (GUI).
-   - Manipulação, tratamento e visualização de dados utilizando bibliotecas como **Pandas**, **NumPy**, **scikit-learn** e **Matplotlib**.
+   - Manipulação, tratamento e visualização de dados utilizando as bibliotecas **Pandas**, **NumPy**, **scikit-learn** e **Matplotlib**.
    - Noções básicas de **Django**.
+   - Noções em **Machine Learning**.
 
 2. **Bancos de Dados**:
    - Experiência com bancos de dados SQL (**MySQL**, **PostgreSQL** e **SQLite**) e NoSQL (**MongoDB**).
@@ -25,7 +26,7 @@ Olá! Sou Rafael Lemke, um entusiasta de **ciência de dados** e **inteligência
 
 ## Projetos
 Aqui estão alguns dos meus projetos:
-################# TODO ###############
+   - [**Análise de dados**](https://github.com/rafalemke/Google_Data_Analytics_Case_Study) 
 
 ## Contato
 Se você gostaria de saber mais sobre algum projeto ou colaborar, sinta-se à vontade para entrar em contato comigo através do meu LinkedIn.
