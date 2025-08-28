@@ -10,8 +10,8 @@
             --accent-color: #3b82f6;
             --text-color: #1f2937;
             --text-light: #6b7280;
-            --bg-light: #f8fafc;
-            --bg-white: #ffffff;
+            --bg-light: #e9edf6;
+            --bg-white: #f2f2f2;
             --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
             --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -169,11 +169,26 @@
         }
 
         #thumbnail-iot-project {
-        background-image: url('/assets/images/menor.png'); /* Substitua pelo caminho correto da sua imagem */
-        background-size: cover; /* ESSENCIAL: Faz a imagem cobrir todo o espaço sem distorcer */
-        background-position: center; /* Centraliza a imagem no espaço */
-        background-repeat: no-repeat; /* Garante que a imagem não se repita */
+        background-image: url('/assets/images/menor.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
         }
+
+        #thumbnail-ocr-project {
+        background-image: url('/assets/images/Tesseract.png');
+        background-size: contain; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        }
+
+        #thumbnail-bike-project {
+        background-image: url('/assets/images/Cyclistic.png');
+        background-size: contain; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        }
+
 
         @keyframes fadeInUp {
             from {
