@@ -1,14 +1,54 @@
-# Ignore os arquivos de sistema do Mac
-.DS_store
-
-# Ignore a pasta node_modules
-node_modules
-
-# Ignore todos os arquivos de texto
-*.txt
-
-# Ignore arquivos relacionados às chaves de API
+# ===== Segredos e credenciais (NUNCA commitar) =====
 .env
+.env.*
+*.local
+*.key
+*.pem
+*.pfx
+*.p12
+secrets.*
+credentials.*
+*.credentials
+config.secret.*
 
-# Ignore arquivos de configuração de SASS
-.sass-cache
+# ===== Documentos pessoais (rede de segurança — manter fora do repo público) =====
+PLANO_DE_ACAO.md
+TEMPLATE_README_PROJETO.md
+/private/
+/pessoal/
+
+# ===== Arquivos de sistema =====
+# macOS
+.DS_Store
+.DS_store
+# Windows / OneDrive
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ===== Editores / IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Dependências e build =====
+node_modules/
+.sass-cache/
+dist/
+build/
+
+# ===== Python (scripts de dados) =====
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+*.ipynb_checkpoints/
+
+# ===== Logs e temporários =====
+*.log
+*.tmp
+*.txt
