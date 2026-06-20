@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Lemke - Analista de Dados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Rafael Lemke — Analista de Dados | Analytics Engineer</title>
+    <meta name="description" content="Portfólio de Rafael Lemke — Analista de Dados e Analytics Engineer especializado em Python, Power BI, SQL e Google Cloud. Da ingestão de dados à entrega de insights estratégicos.">
+    <meta name="author" content="Rafael Lemke">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rafael Lemke — Analista de Dados | Analytics Engineer">
+    <meta property="og:description" content="Transformando dados em decisões estratégicas. Python · Power BI · SQL · Cloud.">
+    <meta property="og:url" content="https://rafalemke.github.io">
+    <meta property="og:image" content="https://rafalemke.github.io/giphy.gif">
+
+    <!-- Favicon (emoji data URI) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Rafael Lemke</div>
+            <div class="logo">Rafael <span>Lemke</span></div>
             <ul class="nav-menu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#certificates">Certificados</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+                <li><a href="#education" data-i18n="nav.education">Formação</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             </ul>
-            <button class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button data-lang="pt" class="active" aria-label="Português">PT</button>
+                    <button data-lang="en" aria-label="English">EN</button>
+                </div>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -31,20 +55,46 @@
         <div class="hero-content">
             <img src="giphy.gif" alt="Rafael Lemke" class="hero-image">
             <h1>Rafael Lemke</h1>
-            <p class="subtitle">
-                Analista de Dados & BI com foco em gerar insights acionáveis e 
-                otimizar processos através da tecnologia.
-            </p>            
+            <p class="role" data-i18n="hero.role">Analista de Dados &middot; Analytics Engineer</p>
+            <p class="subtitle" data-i18n="hero.subtitle">
+                Da ingestão de dados à entrega de insights — transformo dados brutos em
+                decisões estratégicas com Python, Power BI, SQL e Cloud.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_projects"><i class="fas fa-folder-open"></i> Ver Projetos</a>
+                <a id="cv-link" href="assets/cv/Rafael_Lemke_CV.pdf" target="_blank" rel="noopener" class="btn btn-cv" data-i18n="hero.cta_cv"><i class="fas fa-download"></i> Baixar CV</a>
+            </div>
             <div class="social-links">
-                <a href="https://github.com/rafalemke" target="_blank" title="GitHub">
+                <a href="https://github.com/rafalemke" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/rafael-lemke-645114137/" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/rafael-lemke-645114137/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:contato@email.com" title="Email">
+                <a href="mailto:rafael.acllemke@gmail.com" aria-label="Email" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Strip -->
+    <section id="stack" class="tech-stack">
+        <div class="container">
+            <h3 class="stack-title" data-i18n="stack.title">Stack &amp; Ferramentas</h3>
+            <div class="stack-grid fade-in">
+                <div class="stack-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="stack-item"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+                <div class="stack-item"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
+                <div class="stack-item"><i class="devicon-googlecloud-plain colored"></i><span>GCP / BigQuery</span></div>
+                <div class="stack-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                <div class="stack-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                <div class="stack-item"><i class="devicon-oracle-original colored"></i><span>Oracle</span></div>
+                <div class="stack-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                <div class="stack-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                <div class="stack-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="stack-item"><i class="fas fa-chart-bar" style="color:#F2C811"></i><span>Power BI</span></div>
+                <div class="stack-item"><i class="fas fa-stream" style="color:#FF6F00"></i><span>Airflow</span></div>
             </div>
         </div>
     </section>
@@ -52,44 +102,44 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
+            <h2 class="section-title" data-i18n="about.title">Sobre Mim</h2>
             <div class="about-content fade-in">
                 <div class="about-stats">
                     <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span>Anos de Experiência</span>
+                        <span class="stat-number">2+</span>
+                        <span data-i18n="about.stat_years">Anos em Dados</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span>Projetos Concluídos</span>
+                        <span class="stat-number">10+</span>
+                        <span data-i18n="about.stat_projects">Projetos Entregues</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span>Certificações</span>
+                        <span class="stat-number">4</span>
+                        <span data-i18n="about.stat_certs">Certificações</span>
                     </div>
                     <div class="stat-item">
-                        <span>Soluções Orientadas a Dados</span>
+                        <span class="stat-number">C1</span>
+                        <span data-i18n="about.stat_english">Inglês Avançado</span>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Transformando Dados em Decisões Estratégicas</h3>
-                    <p>
-                        Com mais de 3 anos de experiência, meu foco é traduzir dados brutos em inteligência de negócio que 
-                        impulsiona a tomada de decisão estratégica. Possuo experiência na construção de ecossistemas de dados, 
-                        desde a extração e modelagem (ETL) até a criação de dashboards interativos e relatórios automatizados.
+                    <h3 data-i18n="about.heading">Transformando Dados em Decisões Estratégicas</h3>
+                    <p data-i18n="about.p1">
+                        Com mais de 3 anos de experiência, meu foco é traduzir dados brutos em inteligência de negócio que
+                        impulsiona a tomada de decisão estratégica. Atuo de ponta a ponta — da extração e modelagem (ETL)
+                        à criação de dashboards interativos e relatórios automatizados.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Tenho experiência na automação de processos, que resulta em economia de tempo e redução de erros
+                        operacionais, sempre com foco em governança, qualidade do dado e no princípio de <strong>Single Source of Truth</strong>.
+                    </p>
+                    <p data-i18n="about.p3">
+                        Sou apaixonado por resolver problemas complexos e acredito que cada conjunto de dados esconde uma oportunidade —
+                        do Business Intelligence clássico à engenharia de dados e integrações com IA e IoT.
                     </p>
                     <p>
-                        Minha 
-                        experiência abrange a automação de processos, que resulta em economia de tempo e redução de erros 
-                        operacionais, permitindo que a gestão se concentre no que realmente importa: o crescimento do negócio.
-                    </p>
-                    <p>
-                        Sou apaixonado por resolver problemas complexos e acredito que cada conjunto de dados esconde uma oportunidade. 
-                        Busco ativamente por desafios onde eu possa aplicar minhas habilidades para gerar um impacto mensurável e contínuo.
-                    </p>
-                    <p>
-                        <strong>Especialidades:</strong> Análise Exploratória de Dados, Machine Learning, Visualização de Dados, 
-                        ETL, Business Intelligence, Automação de Processos.
+                        <strong data-i18n="about.specialties_label">Especialidades:</strong>
+                        <span data-i18n="about.specialties">Análise Exploratória, Machine Learning, Visualização de Dados, ETL, Business Intelligence e Automação de Processos.</span>
                     </p>
                 </div>
             </div>
@@ -97,86 +147,61 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section-alt">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
+            <h2 class="section-title" data-i18n="skills.title">Habilidades Técnicas</h2>
             <div class="skills-grid fade-in">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Coleta e Extração de Dados</h3>
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skills.cat_collect">Coleta e Extração de Dados</span></h3>
                     <ul class="skill-list">
-                        <li>Bancos de Dados Relacionais: SQL (Oracle PL/SQL, MySQL, PostgreSQL) 
-                            Joins, Subqueries, CTEs...
-                        </li>
-                        <li>
-                            Web Scraping: Python com BeautifulSoup e Selenium para coleta de dados de fontes web.
-                        </li>
-                        <li>
-                            APIs: Consumo de APIs REST para integração de dados.
-                        </li>                        
+                        <li data-i18n="skills.collect_1">Bancos relacionais: SQL (Oracle PL/SQL, MySQL, PostgreSQL) — Joins, Subqueries, CTEs</li>
+                        <li data-i18n="skills.collect_2">Web Scraping: Python com BeautifulSoup, Selenium e Playwright</li>
+                        <li data-i18n="skills.collect_3">APIs: consumo de APIs REST para integração de dados</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Processamento e Modelagem (ETL)</h3>
+                    <h3><i class="fas fa-diagram-project"></i> <span data-i18n="skills.cat_etl">Processamento e Modelagem (ETL)</span></h3>
                     <ul class="skill-list">
-                        <li>
-                            Ferramentas de ETL: Pentaho Data Integration (PDI) para construção de fluxos de transformação.
-                        </li>
-                        <li>
-                            Scripting: Python (Pandas) para limpeza, transformação, enriquecimento e agregação de dados em larga escala.
-                        </li>
-                        <li>
-                            Orquestração: Conhecimento em Apache Airflow para agendamento e monitoramento de pipelines.
-                        </li>                        
+                        <li data-i18n="skills.etl_1">Ferramentas de ETL: Pentaho Data Integration (PDI)</li>
+                        <li data-i18n="skills.etl_2">Scripting: Python (Pandas, NumPy) para limpeza e transformação em larga escala</li>
+                        <li data-i18n="skills.etl_3">Orquestração: Apache Airflow para agendamento e monitoramento de pipelines</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Análise e Machine Learning</h3>
+                    <h3><i class="fas fa-chart-line"></i> <span data-i18n="skills.cat_ml">Análise e Machine Learning</span></h3>
                     <ul class="skill-list">
-                        <li>
-                            Análise Exploratória: Pandas, NumPy, e Jupyter Notebooks para investigar dados, 
-                            validar hipóteses e extrair primeiros insights.
-                        </li>
-                        <li>
-                            Análise Estatística: Aplicação de testes estatísticos para validação de resultados.
-                        </li>
-                        <li>
-                            Modelagem Preditiva: Scikit-learn para criação e avaliação de modelos de classificação e regressão.
-                        </li>
+                        <li data-i18n="skills.ml_1">Análise Exploratória: Pandas, NumPy e Jupyter Notebooks</li>
+                        <li data-i18n="skills.ml_2">Análise Estatística para validação de hipóteses e resultados</li>
+                        <li data-i18n="skills.ml_3">Modelagem Preditiva: Scikit-learn, TensorFlow e PyTorch</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Visualização e Business Intelligence</h3>
+                    <h3><i class="fas fa-chart-bar"></i> <span data-i18n="skills.cat_bi">Visualização e Business Intelligence</span></h3>
                     <ul class="skill-list">
-                        <li>
-                            Dashboards Interativos: Power BI e Qlik Sense (nível avançado) para desenvolvimento 
-                            de painéis de KPIs, relatórios gerenciais e análises self-service.
-                        </li>
-                        <li>
-                            Storytelling com Dados: Habilidade para escolher os gráficos corretos e construir narrativas 
-                            visuais que comunicam resultados de forma clara e objetiva (Tableau, Seaborn, Matplotlib).
-                        </li>
-                        <li>
-                            Aplicações com Streamlit: Desenvolvimento de painéis e aplicações web interativas diretamente com Python.
-                        </li>
+                        <li data-i18n="skills.bi_1">Power BI (DAX e Power Query/M) e Qlik Sense — KPIs e relatórios gerenciais</li>
+                        <li data-i18n="skills.bi_2">Storytelling com Dados: Looker, Seaborn e Matplotlib</li>
+                        <li data-i18n="skills.bi_3">Aplicações com Streamlit diretamente em Python</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Outros</h3>
+                    <h3><i class="fas fa-cloud"></i> <span data-i18n="skills.cat_cloud">Cloud, Infra & Backend</span></h3>
                     <ul class="skill-list">
-                        <li>
-                            Controle de Versão: Git e GitHub para gerenciamento de código e colaboração em projetos.
-                        </li>
-                        <li>
-                            Conhecimento HTML, CSS e JavaScript para desenvolvimento front-end.
-                        </li>
-                        <li>
-                            Design com Figma.
-                        </li>
-                        
+                        <li data-i18n="skills.cloud_1">Google Cloud Platform (GCP) e BigQuery</li>
+                        <li data-i18n="skills.cloud_2">Docker para containerização de aplicações</li>
+                        <li data-i18n="skills.cloud_3">APIs e back-end com Django, FastAPI e Flet</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> <span data-i18n="skills.cat_ai">IA, IoT & Outros</span></h3>
+                    <ul class="skill-list">
+                        <li data-i18n="skills.ai_1">Integrações com LLMs (Llama 3) e chatbots para WhatsApp</li>
+                        <li data-i18n="skills.ai_2">IoT com ESP32 e Raspberry Pi, ingestão de sensores via API</li>
+                        <li data-i18n="skills.ai_3">Git, GitHub, metodologias ágeis (Scrum) e Figma</li>
                     </ul>
                 </div>
             </div>
@@ -186,21 +211,20 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
+            <h2 class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
             <div class="projects-grid fade-in">
+                <!-- IoT -->
                 <div class="project-card">
-                    <div class="project-image" id="thumbnail-iot-project">
-                        
-                    </div>
+                    <div class="project-image" id="thumbnail-iot-project"></div>
                     <div class="project-content">
-                        <h3 class="project-title">Pipeline de Dados IoT End-to-End</h3>
-                        <p class="project-description">
-                            <strong>Objetivo:</strong> Construir um pipeline de dados IoT completo, superando o desafio 
-                            de integrar hardware (ESP32), um servidor remoto (Raspberry Pi) e um dashboard web de forma segura.
+                        <h3 class="project-title" data-i18n="projects.iot_title">Pipeline de Dados IoT End-to-End</h3>
+                        <p class="project-description" data-i18n="projects.iot_obj">
+                            <strong>Objetivo:</strong> construir um pipeline de dados IoT completo, integrando hardware (ESP32),
+                            um servidor remoto (Raspberry Pi) e um dashboard web de forma segura.
                         </p>
-                        <p class="project-description">
-                            <strong>Ação:</strong> Construir um pipeline de dados IoT completo, superando o desafio de integrar
-                             hardware (ESP32), um servidor remoto (Raspberry Pi) e um dashboard web de forma segura.
+                        <p class="project-description" data-i18n="projects.iot_act">
+                            <strong>Ação:</strong> sensores no ESP32 enviam leituras via FastAPI para o Raspberry Pi, que persiste
+                            em MySQL e expõe um dashboard Streamlit publicado com túnel Cloudflare.
                         </p>
                         <div class="project-tags">
                             <span class="tag">IoT</span>
@@ -213,142 +237,128 @@
                             <span class="tag">MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/rafalemke/weather_project" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-github"></i> Código
+                            <a href="https://github.com/rafalemke/weather_project" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-github"></i> <span data-i18n="projects.btn_code">Código</span>
                             </a>
-                            <a href="https://app.itacarnijo.online" target="_blank" class="btn btn-secondary">
-                                <i class="fas fa-rocket"></i> Ver App
+                            <a href="https://app.itacarnijo.online" target="_blank" rel="noopener" class="btn btn-secondary">
+                                <i class="fas fa-rocket"></i> <span data-i18n="projects.btn_app">Ver App</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image" id="thumbnail-ocr-project">
-                        
-                    </div>
+                <!-- Power BI Dashboard -->
+                <!--
+                  Quando tiver o relatório publicado (Power BI > Publicar na Web),
+                  troque o bloco .project-image abaixo por:
+                  <div class="project-image embed">
+                      <iframe title="Dashboard" src="COLE_AQUI_O_LINK_DO_PUBLISH_TO_WEB" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  e aponte o botão "Ver Dashboard" para o mesmo link.
+                -->
+                <div class="project-card featured">
+                    <div class="project-image"><i class="fas fa-chart-pie"></i></div>
                     <div class="project-content">
-                        <h3 class="project-title">Automação de Extração de Dados (Freelance)</h3>
-                        <p class="project-description">
-                            <strong>Objetivo: </strong>Extrair, tratar e unificar dados de listas de presença e votação fornecidas em arquivos PDF vetoriais.
+                        <h3 class="project-title" data-i18n="projects.bi_title">Dashboard Analítico — Power BI</h3>
+                        <p class="project-description" data-i18n="projects.bi_obj">
+                            <strong>Objetivo:</strong> consolidar dados operacionais em um painel executivo de KPIs para apoiar a decisão estratégica.
                         </p>
-                        <p class="project-description">
-                            <strong>Ação: </strong>Construí um pipeline em Python que utilizou OCR (Tesseract), técnicas de Regex e Fuzzy Join para extrair dados, corrigir inconsistências e unificar as tabelas, exportando o resultado final para uma planilha XLSX.
+                        <p class="project-description" data-i18n="projects.bi_act">
+                            <strong>Ação:</strong> modelagem dimensional, medidas em DAX e tratamento em Power Query (M), com métricas padronizadas (single source of truth).
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">Power Query (M)</span>
+                            <span class="tag">Modelagem Dimensional</span>
+                            <span class="tag">KPIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-clock"></i> <span data-i18n="projects.btn_dash">Ver Dashboard</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatbot -->
+                <div class="project-card">
+                    <div class="project-image"><i class="fab fa-whatsapp"></i></div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.bot_title">Chatbot de Dados (WhatsApp + Llama 3)</h3>
+                        <p class="project-description" data-i18n="projects.bot_obj">
+                            <strong>Objetivo:</strong> permitir consultas a dados de negócio em linguagem natural, direto pelo WhatsApp.
+                        </p>
+                        <p class="project-description" data-i18n="projects.bot_act">
+                            <strong>Ação:</strong> integração da Evolution API/WAHA com um LLM (Llama 3) e backend FastAPI, traduzindo
+                            perguntas em consultas e devolvendo respostas automatizadas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Llama 3</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">WhatsApp</span>
+                            <span class="tag">Evolution API</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-clock"></i> <span data-i18n="projects.btn_soon">Em Breve</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OCR -->
+                <div class="project-card">
+                    <div class="project-image" id="thumbnail-ocr-project"></div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.ocr_title">Automação de Extração de Dados (Freelance)</h3>
+                        <p class="project-description" data-i18n="projects.ocr_obj">
+                            <strong>Objetivo:</strong> extrair, tratar e unificar dados de listas de presença e votação fornecidas em PDFs.
+                        </p>
+                        <p class="project-description" data-i18n="projects.ocr_act">
+                            <strong>Ação:</strong> pipeline em Python com OCR (Tesseract), Regex e Fuzzy Join para extrair, corrigir
+                            inconsistências e unificar tabelas, exportando o resultado para XLSX.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Pandas</span>
                             <span class="tag">OCR</span>
-                            <span class="tag">REGEX</span>
-                            <span class="tag">Fuzzywuzzy</span>
+                            <span class="tag">Regex</span>
+                            <span class="tag">FuzzyWuzzy</span>
                             <span class="tag">Data Wrangling</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/rafalemke/freelance-data-parsing" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-github"></i> Código
+                            <a href="https://github.com/rafalemke/freelance-data-parsing" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-github"></i> <span data-i18n="projects.btn_code">Código</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Google Data Analytics -->
                 <div class="project-card">
-                    <div class="project-image" id="thumbnail-bike-project">
-                        
-                    </div>
+                    <div class="project-image" id="thumbnail-bike-project"></div>
                     <div class="project-content">
-                        <h3 class="project-title">Análise Google Data Analytics</h3>
-                        <p class="project-description">
-                        <strong>Objetivo: </strong>Identificar padrões de uso em dados de uma empresa de bicicletas para converter
-                        usuários casuais em assinantes anuais.
+                        <h3 class="project-title" data-i18n="projects.bike_title">Estudo de Caso — Google Data Analytics</h3>
+                        <p class="project-description" data-i18n="projects.bike_obj">
+                            <strong>Objetivo:</strong> identificar padrões de uso de uma empresa de bicicletas para converter
+                            usuários casuais em assinantes anuais.
                         </p>
-                        <p class="project-description">
-                            <strong>Ação: </strong>Processei e analisei mais de 1.2 milhão de registros
-                            com SQL e R, culminando em um dashboard com recomendações estratégicas para a equipe de marketing.
+                        <p class="project-description" data-i18n="projects.bike_act">
+                            <strong>Ação:</strong> processei e analisei mais de 1,2 milhão de registros com SQL e R, culminando em
+                            recomendações estratégicas para a equipe de marketing.
                         </p>
                         <div class="project-tags">
                             <span class="tag">R</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Matplotlib</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Tableau</span>
                             <span class="tag">EDA</span>
                         </div>
                         <div class="project-links">
-                        <a href="https://github.com/rafalemke/Google_Data_Analytics_Case_Study" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-github"></i> Código
-                        </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Placeholder para Dashboard -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Dashboard Vendas - Power BI</h3>
-                        <p class="project-description">
-                            Dashboard interativo desenvolvido em Power BI para análise de vendas, com métricas de performance, 
-                            tendências e insights estratégicos para tomada de decisão.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Power BI</span>
-                            <span class="tag">DAX</span>
-                            <span class="tag">Dashboard</span>
-                            <span class="tag">BI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">
-                                <i class="fas fa-eye"></i> Em Breve
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Placeholder para ML -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Modelo Preditivo - Machine Learning</h3>
-                        <p class="project-description">
-                            Desenvolvimento de modelo de machine learning para previsão de vendas utilizando algoritmos 
-                            de regressão e técnicas avançadas de feature engineering.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Prediction</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">
-                                <i class="fas fa-eye"></i> Em Breve
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Placeholder para ETL -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Pipeline ETL Automatizado</h3>
-                        <p class="project-description">
-                            Pipeline completo de ETL desenvolvido com Pentaho e Airflow para automação de processos 
-                            de extração, transformação e carregamento de dados empresariais.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">ETL</span>
-                            <span class="tag">Pentaho</span>
-                            <span class="tag">Airflow</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">
-                                <i class="fas fa-eye"></i> Em Breve
+                            <a href="https://github.com/rafalemke/Google_Data_Analytics_Case_Study" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fab fa-github"></i> <span data-i18n="projects.btn_code">Código</span>
                             </a>
                         </div>
                     </div>
@@ -357,29 +367,103 @@
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
+    <!-- Experience Section -->
+    <section id="experience" class="section-alt">
         <div class="container">
-            <h2 class="section-title">Certificações</h2>
+            <h2 class="section-title" data-i18n="exp.title">Experiência Profissional</h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-date" data-i18n="exp.cehab_date">Out/2025 – Atual</div>
+                    <div class="timeline-role" data-i18n="exp.cehab_role">Analista de Dados</div>
+                    <div class="timeline-company">CEHAB — Companhia Estadual de Habitação e Obras · Recife, PE</div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp.cehab_1">Desenvolvimento e manutenção de dashboards interativos em Power BI para decisões estratégicas.</li>
+                        <li data-i18n="exp.cehab_2">Modelagem de dados com DAX e M, com métricas padronizadas e single source of truth.</li>
+                        <li data-i18n="exp.cehab_3">Scripts Python para web scraping e automação, containerizados com Docker e executados na GCP.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-i18n="exp.bea_date">Set/2025 – Out/2025</div>
+                    <div class="timeline-role" data-i18n="exp.bea_role">Analista de BI</div>
+                    <div class="timeline-company">beAnalytic · Natal, RN · Remoto</div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp.bea_1">Dashboards em Power BI com integração ao Google BigQuery para times de produto e marketing.</li>
+                        <li data-i18n="exp.bea_2">Consultas SQL para análise de dados em ambiente cloud.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-i18n="exp.uni_date">Jun/2024 – Jun/2025</div>
+                    <div class="timeline-role" data-i18n="exp.uni_role">Estagiário de TI</div>
+                    <div class="timeline-company">Unimed Caruaru — Núcleo de TI · Caruaru, PE</div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp.uni_1">Pipelines ETL com Pentaho (PDI) integrando múltiplas fontes de dados.</li>
+                        <li data-i18n="exp.uni_2">Consultas SQL em Oracle PL/SQL para relatórios gerenciais.</li>
+                        <li data-i18n="exp.uni_3">Web scraping com Python (Selenium, BeautifulSoup) e visualização em Qlik Sense.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-i18n="exp.free_date">2024 – Atual</div>
+                    <div class="timeline-role" data-i18n="exp.free_role">Desenvolvedor Freelance</div>
+                    <div class="timeline-company" data-i18n="exp.free_company">Projetos Independentes · Remoto</div>
+                    <ul class="timeline-list">
+                        <li data-i18n="exp.free_1">Automação de extração de texto de PDFs com OCR (Tesseract), reduzindo processamento manual.</li>
+                        <li data-i18n="exp.free_2">Dashboards interativos em Streamlit e soluções de IoT/IA sob demanda.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-i18n="edu.title">Formação Acadêmica</h2>
+            <div class="education-grid fade-in">
+                <div class="education-card">
+                    <div class="edu-degree" data-i18n="edu.mba_degree">MBA em Business Intelligence & Analytics 360</div>
+                    <div class="edu-school">Xperiun · Data Analytics</div>
+                    <div class="edu-date" data-i18n="edu.mba_date">Ago/2025 – Atual</div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-degree" data-i18n="edu.cst_degree">CST em Análise e Desenvolvimento de Sistemas</div>
+                    <div class="edu-school">Universidade Estácio de Sá</div>
+                    <div class="edu-date" data-i18n="edu.cst_date">Fev/2023 – Jun/2025</div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-degree" data-i18n="edu.aero_degree">Bacharelado em Ciências Aeronáuticas</div>
+                    <div class="edu-school">Unifacisa · Campina Grande, PB</div>
+                    <div class="edu-date">2010 – 2013</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cert.title">Certificações</h2>
             <div class="certificates-grid fade-in">
                 <div class="certificate-card">
                     <h3 class="certificate-title">Google Data Analytics Certificate</h3>
                     <p class="certificate-provider">Coursera</p>
-                    <span class="certificate-status status-completed">Concluído</span>
+                    <span class="certificate-status status-completed" data-i18n="cert.done">Concluído</span>
                     <div style="margin-top: 1rem;">
-                        <a href="https://www.credly.com/badges/e9d2afa6-2140-45cd-96e2-27e6833b8c92" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-certificate"></i> Ver Certificado
+                        <a href="https://www.credly.com/badges/e9d2afa6-2140-45cd-96e2-27e6833b8c92" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fas fa-certificate"></i> <span data-i18n="cert.view">Ver Certificado</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="certificate-card">
-                    <h3 class="certificate-title">Cientista de Dados</h3>
+                    <h3 class="certificate-title" data-i18n="cert.ds">Cientista de Dados</h3>
                     <p class="certificate-provider">Udemy</p>
-                    <span class="certificate-status status-completed">Concluído</span>
+                    <span class="certificate-status status-completed" data-i18n="cert.done">Concluído</span>
                     <div style="margin-top: 1rem;">
-                        <a href="https://www.udemy.com/certificate/UC-ab592417-43c2-43f5-adac-f78b800839ce/" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-certificate"></i> Ver Certificado
+                        <a href="https://www.udemy.com/certificate/UC-ab592417-43c2-43f5-adac-f78b800839ce/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fas fa-certificate"></i> <span data-i18n="cert.view">Ver Certificado</span>
                         </a>
                     </div>
                 </div>
@@ -387,21 +471,21 @@
                 <div class="certificate-card">
                     <h3 class="certificate-title">Pentaho for ETL & Data Integration</h3>
                     <p class="certificate-provider">Udemy</p>
-                    <span class="certificate-status status-completed">Concluído</span>
+                    <span class="certificate-status status-completed" data-i18n="cert.done">Concluído</span>
                     <div style="margin-top: 1rem;">
-                        <a href="https://www.udemy.com/certificate/UC-ead11ab2-4dd6-4e01-89e2-29e3c2abbacd/" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-certificate"></i> Ver Certificado
+                        <a href="https://www.udemy.com/certificate/UC-ead11ab2-4dd6-4e01-89e2-29e3c2abbacd/" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fas fa-certificate"></i> <span data-i18n="cert.view">Ver Certificado</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="certificate-card">
-                    <h3 class="certificate-title">Formação Power BI</h3>
-                    <p class="certificate-provider">Alura</p>
-                    <span class="certificate-status status-progress">Em Andamento</span>
+                    <h3 class="certificate-title">Microsoft Power BI Data Analyst (PL-300)</h3>
+                    <p class="certificate-provider">Microsoft</p>
+                    <span class="certificate-status status-progress" data-i18n="cert.progress">Em Andamento</span>
                     <div style="margin-top: 1rem;">
                         <a href="#" class="btn btn-outline">
-                            <i class="fas fa-clock"></i> Em Progresso
+                            <i class="fas fa-clock"></i> <span data-i18n="cert.in_progress">Em Progresso</span>
                         </a>
                     </div>
                 </div>
@@ -412,22 +496,22 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
+            <h2 class="section-title" data-i18n="contact.title">Entre em Contato</h2>
             <div class="contact-content fade-in">
-                <p>
-                    Pronto para transformar seus dados em insights valiosos? 
+                <p class="contact-lead" data-i18n="contact.lead">
+                    Pronto para transformar seus dados em insights valiosos?
                     Vamos conversar sobre como posso ajudar sua empresa a tomar decisões mais inteligentes.
                 </p>
                 <div class="contact-links">
-                    <a href="mailto:rafaelmklemke@gmail.com" class="contact-item">
+                    <a href="mailto:rafael.acllemke@gmail.com" class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>rafael.acllemke@gmail.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/rafael-lemke-645114137/" target="_blank" class="contact-item">
+                    <a href="https://www.linkedin.com/in/rafael-lemke-645114137/" target="_blank" rel="noopener" class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/rafalemke" target="_blank" class="contact-item">
+                    <a href="https://github.com/rafalemke" target="_blank" rel="noopener" class="contact-item">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
@@ -439,7 +523,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 <strong>Rafael Lemke</strong>. Todos os direitos reservados.</p>
+            <p>&copy; <span id="year">2026</span> <strong>Rafael Lemke</strong>. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 
